@@ -1,8 +1,8 @@
 {
 	"name": "golem-components",
-	"version": "0.1.0",
-	"main": "dist/golem-components.common.js",
-	"module": "dist/golem-components.umd.min.js",
+	"version": "0.1.1",
+	"main": "dist/golem-components.mjs",
+	"module": "dist/golem-components.umd.js",
 	"author": "Aravind S",
 	"description": "A library of all basic components in a style",
 	"files": [
