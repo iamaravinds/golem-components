@@ -1,41 +1,100 @@
 # Golem Components
+A Library of components for a full fledged Web development
 
-A library of Golem Style components
+> Golem Components support only for Vue 3.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Prerequisites
 
-## Customize configuration
+This project requires NodeJS (version 14 or later) and a Vue 3.
+[Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Table of contents
 
+- [Project Name](#golem-components)
+  - [Prerequisites](#prerequisites)
+  - [Table of contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Registering with the app](#registering-with-the-app)
+  - [Contributing](#contributing)
+  - [Authors](#authors)
+  - [Built With](#built-with)
+  - [License](#license)
+
+## Getting Started
+
+Golem is an awesome library which is at seed level now. The goel is to roll over the web app like a golem to build robust strong components.
+
+## Installation
+
+**BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
+
+Install Golem Components in your application:
+
+Using npm
 ```sh
-npm install
+$ npm i golem-components
+```
+Using yarn
+```sh
+$ yarn add golem-components
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
-npm run dev
+### Registering with the app
+
+main.js
+```js 
+import GolemComponents from 'golem-components';
+import 'golem-components/dist/style.css';
+
+import App from './App.vue';
+
+const app = createApp(App);
+
+app.use(GolemComponents);
+
+app.mount('#app');
+
 ```
 
-### Compile and Minify for Production
+### Using the components
+Just start using the components here and thats it!!!!
 
-```sh
-npm run build
+App.vue
+```html 
+<GButton>Click me 🐷</GButton>
+
+<GButton expanded>I am Fat 🐷</GButton>
+
+<GInput />
+
+<GInput placeholder='Secret here!! 🤫' type="password" />
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Contributing
 
-```sh
-npm run test:unit
-```
+1.  Fork it on [github](https://github.com/iamaravinds/golem-components)!
+2.  Create your feature branch: `git checkout -b my-new-component`
+3.  Add your changes: `git add .`
+4.  Commit your changes: `git commit -am 'New component with details'`
+5.  Push to the branch: `git push origin my-new-component`
+6.  Submit a pull request :sunglasses:
+## Authors
 
-### Lint with [ESLint](https://eslint.org/)
+* **Aravind S** - *Initial work* - [iamaravinds](https://github.com/iamaravinds)
 
-```sh
-npm run lint
-```
+See also the list of [contributors](https://github.com/iamaravinds/golem-components/graphs/contributors) who participated in this project.
+## Built With
+
+* [Vue 3](https://vuejs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [VS Code](https://code.visualstudio.com/)
+* and Love ❤️
+
+## License
+MIT
