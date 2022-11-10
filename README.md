@@ -74,6 +74,19 @@ App.vue
 <GInput />
 
 <GInput placeholder='Secret here!! 🤫' type="password" />
+
+<GSearch
+@search='alertItem'
+/>
+
+<GSearch
+  :category="[
+    'Pokemon',
+    'Dragon Ball Z',
+    'Naruto',
+  ]"
+  @search='alertItem'
+/>
 ```
 
 ## Contributing
