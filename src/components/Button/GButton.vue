@@ -36,6 +36,10 @@ const props = defineProps({
 	expanded: {
 		type: Boolean,
 		default: () => false,
-	}
+	},
+	size: {
+		type: Boolean,
+		default: () => 'md',
+	},
 });
 </script>
